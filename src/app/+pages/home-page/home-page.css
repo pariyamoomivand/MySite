@@ -1,24 +1,29 @@
 .background-image{
+    background-color: #b19bdc;
     background-image: url('../../../../public/images/pagee.jpg');
-    /* background-size: cover; */
     background-position: center;
     background-repeat: no-repeat;
-    margin-top: -1.5em;
     height: 100vh;
     width: 100%;
 }
-p{
+p,button{
     font-size: 1.5em;
 }
-div div{
+.background-image div{
     padding: 1em;
     /* background-color: rgba(189, 43, 226, 0.445); */
     margin-left: 35%;
     margin-right: 35%;
-    margin-top: 11%;
+    margin-top: 25vh;
     text-align: center;
-    height: 40vh;
 }
-div button{
-    font-size: 1.5em;
+@media screen and (max-width:550px) {
+    .background-image div p,button{
+        font-size: 1em;
+    }
+    .background-image div{
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 30vh;
+    }
 }
