@@ -4,7 +4,7 @@
   background-position: right top;
   background-repeat: no-repeat;
   background-size: 30em auto;
-  height: 80vh;
+  height: 100vh;
   width: 100%;
   padding-top: 2em;
 }
@@ -14,4 +14,16 @@ p {
   padding: 1em;
   margin-left: 1em;
   font-size: 1.4em;
+}
+@media screen and (max-width: 550px) {
+  p {
+    font-size: small;
+    background-color: rgba(245, 245, 245, 0.489);
+    height: 2em;
+  }
+  .background-image{
+    background-size: 100% auto;
+    display: flex;
+    justify-content: center;
+  }
 }
