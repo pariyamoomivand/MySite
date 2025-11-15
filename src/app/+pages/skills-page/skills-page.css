@@ -1,3 +1,17 @@
-p{
-    margin-left: 1em;
+.background-image {
+  /* background-color: #b19bdc; */
+  background-image: url('../../../../public/images/Thinking.jpg');
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: 30em auto;
+  height: 80vh;
+  width: 100%;
+  padding-top: 2em;
+}
+p {
+  display: inline;
+  background-color: whitesmoke;
+  padding: 1em;
+  margin-left: 1em;
+  font-size: 1.4em;
 }
