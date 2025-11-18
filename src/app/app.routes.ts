@@ -14,7 +14,7 @@ export const routes: Routes = [
   { path: 'contact', component: ContactPage },
   { path: 'interests', component: InterestsPage },
   { path: 'skills', component: SkillsPage },
-  {path:'',redirectTo:'/login',pathMatch:'prefix'},
+  {path:'',redirectTo:'/home',pathMatch:'prefix'},
   {path:'**',redirectTo:'/home'}
   ]},
   {path:'login',component:LoginPage},

@@ -20,8 +20,13 @@
   padding: 0.4em;
   display: inline-block;
   border-radius: 0.1em;
+  min-width: 80px;
+  text-align: center;
 }
 #menu a:hover {
   background-color: yellow;
   color: brown;
+}
+.divider{
+    flex: 1 1 auto;
 }
