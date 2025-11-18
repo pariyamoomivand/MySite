@@ -1,1 +1,40 @@
-<p>login-page works!</p>
+<section class="login">
+  <div>
+    <label for="username">Username</label>
+    <input #un="ngModel" [class.problem]="un.touched && username==''" [(ngModel)]="username" id="username" type="text" placeholder="Username" />
+    @if(un.touched && username==''){
+        <label for="" class="subtitle">It is mandatory</label>
+    }
+    @if(username=='admin'){
+        ✔
+    }
+    @if(username!=='admin' && username!==''){
+        ❌
+    }
+  </div>
+  <div>
+    <label for="password">Password</label>
+    <input #pw="ngModel" [class.problem]="pw.touched && password==''" [(ngModel)]="password" type="password" name="" id="password" placeholder="Password" />
+    @if(password=='admin'){
+        ✔
+    }
+    @if(pw.touched && password==''){
+        <label for="" class="subtitle">It is mandatory</label>
+    }
+    @if(password!=='admin' && password!==''){
+        ❌
+    }
+  </div>
+  <div class="keep">
+    <input [(ngModel)]="remember" type="checkbox" name="" id="remember" />
+    <label for="remember">Remember me.</label>
+  </div>
+  <div>
+    <button [disabled]="username==''||password==''" (click)="check()">Login</button>
+  </div>
+  @if(message!=''){
+  <div class="message">
+    {{ message }}
+  </div>
+  }
+</section>

@@ -1,0 +1,60 @@
+:host{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+.keep *{
+    vertical-align:middle;
+}
+
+.login{
+    background-color: white;
+    padding: 1.3em;
+    border: 1px solid gray;
+    border-radius: 0.3em;
+    box-shadow: 0 0 0.8em 0.2em gray;
+    margin-top: 20vh;
+    min-width: 50vh;
+}
+.login div{
+    margin: 0.5em 0;
+}
+.login div input[type=text],input[type=password]{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.4em;
+}
+.login div input:focus{
+    outline-color: rgb(147, 212, 246);
+}
+.login label:not(:last-child){
+    display: block;
+}
+.login div button{
+    width: 100%;
+    background-color: blueviolet;
+    color: white;
+    padding: 0.4em;
+    border: none;
+    border-radius: 0.3em;
+}
+.login div button[disabled]{
+background-color: silver;
+}
+.login .message{
+    background-color: lightpink;
+    color: yellow;
+    font-size: small;
+    padding: 0.4em;
+    border-radius: 0.3em;
+    text-align: center;
+}
+.problem{
+    border-color: pink;
+    /* background-color: pink; */
+}
+.subtitle{
+    font-size: small;
+    color: gray;
+}
