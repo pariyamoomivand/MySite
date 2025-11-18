@@ -1,0 +1,27 @@
+#baner {
+  background: linear-gradient(207deg, rgba(230, 151, 185, 1) 0%, rgba(148, 187, 233, 1) 100%);
+  padding: 1em 0;
+  font-size: 2em;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 2px 2px 2px #000000;
+}
+#menu {
+  background-color: brown;
+  padding: 0.1em;
+  display: flex;
+  align-items: center;
+  gap: 0.15em;
+}
+#menu a {
+  color: yellow;
+  text-decoration: none;
+  padding: 0.4em;
+  display: inline-block;
+  border-radius: 0.1em;
+}
+#menu a:hover {
+  background-color: yellow;
+  color: brown;
+}
